@@ -19,54 +19,41 @@
 </p>
 
 <p align="center">
-  <strong>Better Harness Tools, not merely storing the archive of leaked Claude Code</strong>
+  <strong>Autonomously maintained by lobsters/claws — not by human hands</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/sponsors/instructkr"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github&style=for-the-badge" alt="Sponsor on GitHub" /></a>
+  <a href="https://github.com/Yeachan-Heo/clawhip">clawhip</a> ·
+  <a href="https://github.com/code-yeongyu/oh-my-openagent">oh-my-openagent</a> ·
+  <a href="https://github.com/Yeachan-Heo/oh-my-claudecode">oh-my-claudecode</a> ·
+  <a href="https://github.com/Yeachan-Heo/oh-my-codex">oh-my-codex</a> ·
+  <a href="https://discord.gg/6ztZB9jvWq">UltraWorkers Discord</a>
 </p>
 
 > [!IMPORTANT]
 > The active Rust workspace now lives in [`rust/`](./rust). Start with [`USAGE.md`](./USAGE.md) for build, auth, CLI, session, and parity-harness workflows, then use [`rust/README.md`](./rust/README.md) for crate-level details.
 
-> If you find this work useful, consider [sponsoring @instructkr on GitHub](https://github.com/sponsors/instructkr) to support continued open-source harness engineering research.
+> Want the bigger idea behind this repo? Read [`PHILOSOPHY.md`](./PHILOSOPHY.md) and Sigrid Jin's public explanation: https://x.com/realsigridjin/status/2039472968624185713
+
+> Shout-out to the UltraWorkers ecosystem powering this repo: [clawhip](https://github.com/Yeachan-Heo/clawhip), [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent), [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode), [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex), and the [UltraWorkers Discord](https://discord.gg/6ztZB9jvWq).
 
 ---
 
 ## Backstory
 
-At 4 AM on March 31, 2026, the Claude Code source was exposed, and the entire dev community was in a frenzy. What followed wasn't a typical human-led engineering effort—it was the first large-scale autonomous coding operation orchestrated entirely by AI agents.
+This repo is maintained by **lobsters/claws**, not by a conventional human-only dev team.
 
-This repository is maintained by **lobsters and claws**—autonomous AI coding agents created by **Bellman** ([@bellman_ych](https://x.com/bellman_ych)) and **Yeongyu** ([@q_yeon_gyu_kim](https://x.com/q_yeon_gyu_kim)). The entire Python port, from reading the original harness structure to producing a working tree with tests, was driven through [oh-my-codex (OmX)](https://github.com/Yeachan-Heo/oh-my-codex) using `$team` mode for parallel code review and `$ralph` mode for persistent execution loops with architect-level verification. No human wrote the core implementation—every line was generated, reviewed, and refined by autonomous agents.
+The people behind the system are [Bellman / Yeachan Heo](https://github.com/Yeachan-Heo) and friends like [Yeongyu](https://github.com/code-yeongyu), but the repo itself is being pushed forward by autonomous claw workflows: parallel coding sessions, event-driven orchestration, recovery loops, and machine-readable lane state.
 
-The result is a clean-room Python rewrite that captures the architectural patterns of Claude Code's agent harness without copying any proprietary source. This isn't merely a port; it's a demonstration of what autonomous coding harnesses can achieve when directed by clear architectural vision and rigorous agent orchestration.
+In practice, that means this project is not just *about* coding agents — it is being **actively built by them**. Features, tests, telemetry, docs, and workflow hardening are landed through claw-driven loops using [clawhip](https://github.com/Yeachan-Heo/clawhip), [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent), [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode), and [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex).
 
-We are actively pushing this further. The basic Python foundation is already in place and functional, but we're just getting started. **Stay tuned—a much more capable version is on the way.**
+This repository exists to prove that an open coding harness can be built **autonomously, in public, and at high velocity** — with humans setting direction and claws doing the grinding.
 
-https://github.com/ultraworkers/claw-code
+See the public build story here:
+
+https://x.com/realsigridjin/status/2039472968624185713
 
 ![Tweet screenshot](assets/tweet-screenshot.png)
-
-## The Creators
-
-**claw-code** is autonomously built and maintained by **UltraWorkers** — a collective of AI coding agents (lobsters and claws) orchestrated by:
-
-- **Bellman** ([@bellman_ych](https://x.com/bellman_ych)) — Creator of [oh-my-codex (OmX)](https://github.com/Yeachan-Heo/oh-my-codex), the agent orchestration layer that drives all development
-- **Yeongyu** ([@q_yeon_gyu_kim](https://x.com/q_yeon_gyu_kim)) — Architect of the claw-code harness and parallel agent workflows
-
-The entire codebase—from initial port to ongoing feature development—is generated through autonomous agent sessions using OmX `$team` and `$ralph` modes. No human writes the core implementation; humans provide architectural direction, agents execute.
-
-### Featured Coverage
-
-Sigrid Jin has been deeply involved in harness engineering—studying how agent systems wire tools, orchestrate tasks, and manage runtime context. Coverage from *The Wall Street Journal* (March 21, 2026) documents the rise of autonomous coding:
-
-> AI startup worker Sigrid Jin, who attended the Seoul dinner, single-handedly used 25 billion of Claude Code tokens last year. At the time, usage limits were looser, allowing early enthusiasts to reach tens of billions of tokens at a very low cost.
->
-> "It was basically like a sharing party," Jin said. "There were lawyers, there were doctors, there were dentists. They did not have software engineering backgrounds."
->
-> — *The Wall Street Journal*, March 21, 2026, [*"The Trillion Dollar Race to Automate Our Entire Lives"*](https://lnkd.in/gs9td3qd)
-
-![WSJ Feature](assets/wsj-feature.png)
 
 ---
 
